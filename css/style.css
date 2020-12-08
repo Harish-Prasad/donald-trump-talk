@@ -14,6 +14,7 @@
 
 body {
     background-image: url(/images/avarat01.jpg);
+    background-attachment: fixed;
     margin: 0;
     font-family: 'Kalam', cursive;
 }
