@@ -5,7 +5,7 @@ var btnTranslate = document.querySelector("#btn-translate");
 var output =  document.querySelector("#output");
 
 // storing server api 
-var url = "";
+var url = "https://api.funtranslations.com/translate/navi.json";
 
 
 // Method which will add user input along with server api call
