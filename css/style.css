@@ -1,75 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+:root {
+    --primary:#09045C;
+    --white: #ffffff;
+    --black: #000000;
+    --width-break:600px
+}
+
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-image: url();
+    background-image: url(/images/avarat01.jpg);
+    margin: 0;
+    font-family: 'Kalam', cursive;
 }
 
 #hero {
+    text-shadow: 15px 8px 6px rgb(184, 18, 18);
     text-align: center;
-    font-style: italic;
-    text-shadow: 5px 2px 6px rgb(184, 18, 18);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+main{
+    
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
 }
 
 #txt-input {
     display: block;
-    width: 400px;
-    height: 20vh;
-    margin: 1rem;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
     padding: 1rem;
-    border: 2px solid black;
-    border-bottom-left-radius: 1rem;
-    background-color:rgb(87, 82, 82);
-    color: white;
-    opacity: 0.8;
+    font-size: large;
+    font-family: inherit;
+    border: 1px solid var(--primary);
+    background-color: var(--black);
+    color: var(--white);
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
-#txt-input:hover {
-    color:black;
-    background-color:white;
-}
 
 #output {
     display: block;
-    width: 400px;
-    height: 20vh;
-    margin: 1rem;
     padding: 1rem;
-    border: 2px solid rgb(66, 61, 61);
-    border-bottom-left-radius: 1rem;
-    background-color:rgb(230, 218, 218);
-    color:black;
+    color:var(--white);
     opacity: 0.9;
+    overflow:hidden;
+    border: 1px solid var(--primary);
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
     
 
 #btn-translate {
+    font-family: 'Kalam', cursive;
+    font-size: large;
     border-radius: 10px;
     padding: 0.3rem;
-    margin-left: 15px;
+    margin: 1rem 0rem;
     font-weight: bold;
-    font-style: italic;
-    background-color: rgb(87, 82, 82);
-    color: white;
-    opacity: 0.9;
+    background-color: var(--primary);
+    color:var(--white);
     display: block;
+    border: none;
 }
 
-#btn-translate:hover {
-    color: black;
-    background-color: white;
-}
 
 #desc {
     margin-top: 30px;
     margin-left: 15px;
     font-size: larger;
     font-weight: bolder;
-    font-style: italic;
-    background-color: white;
-    opacity: 1;
+    color: var(--primary);
     display: inline;
-    text-shadow: 5px 2px 2px rgb(184, 18, 18);
+    text-shadow: 15px 8px 6px rgb(184, 18, 18);
+}
+
+footer {
+    bottom:0;
+    width:100%;
+    padding:1rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: bolder;
+}
+
+#footer-hero{
+    text-shadow: 15px 8px 6px rgb(184, 18, 18);
+    color: var(--primary);
+}
+
+footer#footer-para {
+    max-width: var(--width-break);
+    margin: auto;
+    color: var(--white);
 }
